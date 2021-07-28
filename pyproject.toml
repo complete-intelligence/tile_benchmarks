@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tile_benchmarks"
+version = "0.1.0"
+description = ""
+authors = ["stefanopalmieri <stefano.r.palmieri@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tiledb = "^0.9.3"
+notebook = "^6.4.0"
+matplotlib = "^3.4.2"
+dask = {extras = ["dataframe"], version = "^2021.7.1"}
+arctic = {git = "https://github.com/man-group/arctic"}
+seaborn = "^0.11.1"
+pyarrow = "^4.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
